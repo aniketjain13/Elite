@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Quotation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(/pictures/img2.jpeg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: fit-content;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 8px 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        .custom-button {
+            background-color: darkgray;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>View Quotations</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Quotation Id</th>
+                    <th>Package</th>
+                    <th>Estimated Amount</th>
+                    <th>Vendor ID</th>
+                    <th>User ID</th>
+                    <th>Plan Request ID</th>
+                    <th>Status</th>
+                    <th>Quotation Creation Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dummy Data -->
+                <tr>
+                    <td>q12</td>
+                    <td>Premium</td>
+                    <td>100000</td>
+                    <td>vendor1</td>
+                    <td>user1</td>
+                    <td>req123</td>
+                    <td><button class="custom-button" id="myButton1" onclick="toggleButton('myButton1')">Pending</button></td>
+                    <td>12-05-2023</td>
+                </tr>
+                <tr>
+                    <td>q12</td>
+                    <td>Premium</td>
+                    <td>100000</td>
+                    <td>vendor1</td>
+                    <td>user1</td>
+                    <td>req123</td>
+                    <td><button class="custom-button" id="myButton2" onclick="toggleButton('myButton2')">Pending</button></td>
+                    <td>12-05-2023</td>
+                </tr>
+                <!-- Add more rows with data here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // JavaScript function to change the button color and text
+        function toggleButton(buttonId) {
+            const button = document.getElementById(buttonId);
+
+            if (button.innerText === "Pending" || button.innerText === "Rejected" ) {
+                button.style.backgroundColor = "green";
+                button.innerText = "Accepted";
+            } else {
+                button.style.backgroundColor = "darkgray";
+                button.innerText = "Rejected";
+            }
+        }
+    </script>
+
+</body>
+</html>

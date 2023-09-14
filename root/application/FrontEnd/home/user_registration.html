@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="/styles/login.css">
+</head>
+<body style="background-image: url('/pictures/background-image.jpg');">
+    <div class="userouterbox">
+        <div class="innerbox">
+            <header class="signup-header">
+                <h1>User Registration</h1>
+                <p>It just takes 30 seconds</p>
+            </header>
+            <main class="signup-body">
+                <form id="user_registration_form" action="/user/user_home.html">
+                    <p>
+                        <label for="fullname">Fullname: </label>
+                        <input type="text" id="Fullname" placeholder="Enter Fullname" required><br>
+                    </p>
+                    <p>
+                        <label for="Username">Username: </label>
+                        <input type="text" id="Username" placeholder="Enter Username" required><br>
+                    </p>
+                    <p>
+                        <label for="Email">Email: </label>
+                        <input type="text" id="Email" placeholder="Enter Email Address" required><br>
+                    </p>
+                    <p>   
+                        <label for="Password">Password: </label>
+                        <input type="Password" id="Password" placeholder="Atleast 8 characters required" required><br>
+                        <span id="Password-message"></span>
+                    </p>
+                    <label for="Mobile">Mobile Number:</label>
+                    <input type="text" id="Mobile" placeholder="Enter Mobile Number" required>
+                    </p>
+                    <p>
+                        <label for="Joining Date">Date of Joining:</label>
+                        <input type="date" name="Joining Date" required>
+                    </p>
+                    <p>
+                        <label for="Birth Date">Date of Birth:</label>
+                        <input type="date" name="Birth Date" required>
+                    </p>
+                    <p>
+                        <label for="Department">Department: </label>
+                        <input type="text" id="department" placeholder="Enter Department" required><br>
+                    </p>
+                    <p>
+                        <label for="Location">Location: </label>
+                        <input type="text" id="Location" placeholder="Enter Location" required><br>
+                    <br/>
+                    <p>
+                        <input type="submit" id="submit" value="Create account">
+                    </p>
+                    </p>
+                </form>
+
+            </main>
+            <footer class="signup-footer">
+                <p>
+                    Already have an account? <a href="user_login.html">login</a>
+                </p>
+            </footer>
+
+        </div>
+    </div>
+    
+    <script>
+        function validatePassword() {
+            const passwordInput = document.getElementById("password").value;
+            const passwordMessage = document.getElementById("password-message");
+
+            // Regular expressions for validation
+            const lengthRegex = /.{8,}/;
+            const uppercaseRegex = /[A-Z]/;
+            const lowercaseRegex = /[a-z]/;
+            const digitRegex = /[0-9]/;
+            const specialCharRegex = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/;
+
+            // Check if all conditions are met
+            const isLengthValid = lengthRegex.test(passwordInput);
+            const isUppercaseValid = uppercaseRegex.test(passwordInput);
+            const isLowercaseValid = lowercaseRegex.test(passwordInput);
+            const isDigitValid = digitRegex.test(passwordInput);
+            const isSpecialCharValid = specialCharRegex.test(passwordInput);
+
+            if (isLengthValid && isUppercaseValid && isLowercaseValid && isDigitValid && isSpecialCharValid) {
+                passwordMessage.textContent = "Password is valid.";
+                passwordMessage.style.color = "green";
+
+                // Redirect to the next page (replace 'next_page.html' with your desired URL)
+                window.location.href = "/user/user_home.html";
+
+                // Prevent form submission
+                return false;
+            } else {
+                passwordMessage.textContent = "Password must meet the specified criteria.";
+                passwordMessage.style.color = "red";
+
+                // Prevent form submission
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/homepage.css">
+  <title>Admin Home Page</title>
+
+</head>
+
+<body>
+  <!-- Header -->
+<section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>M</span>ake it <span>H</span>appen</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="/admin/add_vendor.html" data-after="add_vendor">Add Vendor</a></li>
+            <li><a href="/admin/view_vendor.html" data-after="view_vendor">View Vendor</a></li>
+            <li><a href="/admin/view_user_registration.html" data-after="activate_user">Activate User</a></li>
+            <li><a href="/home/home.html" data-after="activate_user" onclick="logout()">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+  
+
+  <!-- Main Section -->
+<section id="hero" style="background-image: url(/pictures/bg6.jpg);">
+    <div class="hero container">
+        <div>
+          <h1>Welcome, <span></span></h1>
+          <h1>Admin<span></span></h1>
+         
+        </div>
+      </div>
+  </section>
+  <!-- End Main Section -->
+  
+  <!-- Footer -->
+<section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>Your</span> Event <span>Planner</span></h1>
+      </div>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="/pictures/linkedin-icon.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="/pictures/facebook-icon.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="/pictures/instagram-icon.png" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2023 Your Event Planner. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  
+  <script>
+    function logout(){
+      history.replaceState(null, 'Home', '/home/home.html');
+    }
+</script>
+
+</body>
+</html>
+
+ 

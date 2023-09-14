@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Quotation</title>
+    <link rel="stylesheet" href="/styles/login.css">
+</head>
+<body>
+    <div class="vendorouterbox" style="background-image: url(/pictures/img6.jpeg);">
+        <div class="innerbox">
+            <header class="signup-header">
+                <h1>Create Quotation</h1>
+                <p>It just takes 30 seconds</p>
+            </header>
+            <main class="signup-body">
+                <form action="#">
+                    <p>
+                        <label for="quotationid">Quotation ID: </label>
+                        <input type="text" id="quotationid" placeholder="Enter Quotation Id" required><br>
+                    </p>
+                    <p>
+                        <label for="package" style="display: block;">Package Type:</label>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="radio" id="basic" name="Package">
+                                </td>
+                                <td>Basic</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" id="premium" name="Package">
+                                </td>
+                                <td>Premium</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" id="classic" name="Package">
+                                </td>
+                                <td>Classic</td>
+                            </tr>
+                        </table>
+                    </p>
+                    <p>
+                        <label for="estimatedamount">Estimated Amount: </label>
+                        <input type="text" id="estimatedamount" placeholder="Enter Estimated Amount" required><br>
+                    </p>
+                    <p>
+                        <label for="vendorid">Vendor ID: </label>
+                        <input type="text" id="vendorid" placeholder="Enter Vendor ID" required><br>
+                    </p>
+                    <p>
+                        <label for="userid">User ID: </label>
+                        <input type="text" id="userid" placeholder="Enter User ID" required><br>
+                    </p>
+                    <p>
+                        <label for="planrequestid">Plan Request ID: </label>
+                        <input type="text" id="planrequestid" placeholder="Enter Plan Request ID" required><br>
+                    </p>
+                    <p>
+                        <label for="quotationcreationdate">Date of Quotation Creation:</label>
+                        <input type="date" name="quotationcreationdate" required>
+                    </p>
+                    <p>
+                        <br/><input type="submit" id="submit" value="Add Package">
+                    </p>
+                </form>
+
+            </main>
+        </div>
+     
+    </div>
+    
+</body>
+</html>

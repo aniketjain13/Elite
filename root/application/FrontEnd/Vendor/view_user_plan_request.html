@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Vendor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(/pictures/img5.jpeg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: fit-content;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 8px 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        .custom-button {
+            background-color: darkgray;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>User Plan Requests</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Request Id</th>
+                    <th>User Id</th>
+                    <th>From Date</th>
+                    <th>To Date</th>
+                    <th>List Of Services</th>
+                    <th>No. Of Person</th>
+                    <th>Other Services</th>
+                    <th>Quotation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dummy Data -->
+                <tr>
+                    <td>req123</td>
+                    <td>user123</td>
+                    <td>12-05-2023</td>
+                    <td>20-05-2023</td>
+                    <td>Service A, Service B</td>
+                    <td>500</td>
+                    <td>Service Q</td>
+                    <td><button class="custom-button" id="myButton1" onclick="createQuotation('myButton1')">Create Quotation</button></td>
+
+                </tr>
+                <tr>
+                    <td>req123</td>
+                    <td>user123</td>
+                    <td>12-05-2023</td>
+                    <td>20-05-2023</td>
+                    <td>Service A, Service B</td>
+                    <td>500</td>
+                    <td>Service Q</td>
+                    <td><button class="custom-button" id="myButton2" onclick="createQuotation('myButton2')">Create Quotation</button></td>
+
+                </tr>
+                
+                <!-- Add more rows with data here -->
+            </tbody>
+        </table>
+    </div>
+    <script>
+        // JavaScript function to change the button color and text
+        function createQuotation(buttonId) {
+            window.location.href = "/vendor/create_quotation.html";
+            
+        }
+    </script>
+
+
+</body>
+</html>

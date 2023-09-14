@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/homepage.css">
+  <title>Home Page</title>
+
+</head>
+
+<body>
+  <!-- Header -->
+<section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>M</span>ake it <span>H</span>appen</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="admin_login.html" data-after="admin_login">Admin Login</a></li>
+            <li><a href="vendor_login.html" data-after="vendor_login">Vendor Login</a></li>
+            <li><a href="user_login.html" data-after="user_login">User Login</a></li>
+            <li><a href="user_registration.html" data-after="user_registration">User Registration</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+  
+
+  <!-- Main Section -->
+  <section id="hero" style="background-image: url(/pictures/bg6.jpg);">
+    <div class="hero container">
+        <div>
+          <h1>Welcome To, <span></span></h1>
+          <h1>Make It<span></span></h1>
+          <h1>Happen<span></span></h1>
+         
+        </div>
+      </div>
+  </section>
+  <!-- End Main Section -->
+  
+   
+   <!-- About Section -->
+<section id="about">
+  <div class="about container">
+    <div class="col-left">
+      <div class="about-img">
+        <img src="/pictures/event-planner-image.jpg" alt="img">
+      </div>
+    </div>
+    <div class="col-right">
+      <h1 class="section-title">About <span>Us</span></h1>
+      <h2>Your Trusted Event Planning Partner</h2>
+
+      <p>For the best and most special evenings in your life, for every occasion no matter how big or how small You decide and we MAKE IT HAPPEN for you</p>
+      <p>We are your extended family who helps you to celebrate your special day by making it your dream come true. To give the most extravagant experience of your life we are here at your service. We are a family of around 200 people above that we have our vendors spread all over the world to give you world class experiences. We have been serving our customers for 6 years now. Please do consider us before planning the little most event of your life and see how grand we can make it</p>
+  </div>
+</section>
+<!-- End About Section -->
+
+
+ <!-- service Section -->
+ <section id="services">
+  <div class="projects container">
+    <div class="projects-header">
+      <h1 class="section-title">S<span>ervices</span></h1>
+    </div>
+    <div class="all-projects">
+      <div class="project-item">
+        <div class="project-info">
+          <h1>Wedding</h1>
+          <p>Creating unforgettable moments is our passion. Let us make your wedding day 
+            dreams a reality. Discover our expert wedding services. 
+            Contact us today to start planning your perfect day.</p>
+        </div>
+        <div class="project-img">
+          <img src="/pictures/wedding.jpeg" alt="img" href="E:\Mini Project\Turn Table 20001-0240.mkv">
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="project-info">
+          <h1>Birthday Party</h1>
+          <p>Make every birthday a cherished memory. 
+            From custom cakes to themed decorations, we've got your celebration covered. 
+            Contact us to plan the perfect birthday bash!</p>
+        </div>
+        <div class="project-img">
+          <img src="/pictures/birthday1.jpg" alt="img">
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="project-info">
+          <h1>Farewell Party</h1>
+          <p>Life is full of hellos and goodbyes. Make your farewell a moment to remember. 
+            Explore our services and let's create a farewell party 
+            that truly reflects your journey.</p>
+        </div>
+        <div class="project-img">
+          <img src="/pictures/farewell.jpg" alt="img">
+        </div>
+      </div>
+     
+      </div>
+    </div>
+  
+</section>
+<!-- End service Section -->
+
+
+  <!-- Footer -->
+<section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>Your</span> Event <span>Planner</span></h1>
+      </div>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="/pictures/linkedin-icon.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="/pictures/facebook-icon.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="/pictures/instagram-icon.png" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2023 Your Event Planner. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+
+  <script>
+    // Check if the user is coming from the logout page and redirect back to home
+    if (document.referrer.includes("user_home.html")) {
+        window.location.href = "home.html";
+    }
+    else if (document.referrer.includes("vendor_home.html")) {
+        window.location.href = "home.html";
+    }
+    else if (document.referrer.includes("admin_home.html")) {
+        window.location.href = "home.html";
+    }
+</script>
+
+</body>
+</html>
+
+ 

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Package</title>
+    <link rel="stylesheet" href="/styles/login.css">
+</head>
+<body>
+    <div class="vendorouterbox" style="background-image: url(/pictures/img3.jpeg);">
+        <div class="innerbox">
+            <header class="signup-header">
+                <h1>Add Package</h1>
+                <p>It just takes 30 seconds</p>
+            </header>
+            <main class="signup-body">
+                <form action="#">
+                    <p>
+                        <label for="packageid">Package ID: </label>
+                        <input type="text" id="packageid" placeholder="Enter Package Id" required><br>
+                    </p>
+                    <p>
+                        <label for="packagetype" style="display: block;">Package Type:</label>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="radio" id="basic" name="Package">
+                                </td>
+                                <td>Basic</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" id="premium" name="Package">
+                                </td>
+                                <td>Premium</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" id="classic" name="Package">
+                                </td>
+                                <td>Classic</td>
+                            </tr>
+                        </table>
+                    </p>
+                    <p>
+                        <label for="listofservices">List Of Service: </label>
+                        <input type="text" id="listofservices" placeholder="Enter multiple services. Distinguished by comma" required><br>
+                    </p>
+                    <p>
+                        <label for="amount">Email: </label>
+                        <input type="number" id="amout" placeholder="Enter the amount. (In Rupees)" required><br>
+                    </p>
+                    <p>
+                        <br/><input type="submit" id="submit" value="Add Package">
+                    </p>
+                </form>
+
+            </main>
+        </div>
+     
+    </div>
+    
+</body>
+</html>
